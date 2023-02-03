@@ -31,6 +31,13 @@
 bool nexInit(void);
 
 /**
+ * Init Nextion with baudrate configs.  
+ * 
+ * @return true if success, false for failure. 
+ */
+bool nexInit(int dbRate, int nexRate);
+
+/**
  * Listen touch event and calling callbacks attached before.
  * 
  * Supports push and pop at present. 
