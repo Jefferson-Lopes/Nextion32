@@ -206,11 +206,11 @@ bool recvRetCommandFinished(uint32_t timeout)
 
     if (ret) 
     {
-        dbSerialPrintln("recvRetCommandFinished ok");
+        log_d("recvRetCommandFinished ok");
     }
     else
     {
-        dbSerialPrintln("recvRetCommandFinished err");
+        log_d("recvRetCommandFinished err");
     }
     
     return ret;
